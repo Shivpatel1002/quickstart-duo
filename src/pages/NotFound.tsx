@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Home, ArrowLeft } from 'lucide-react';
@@ -30,6 +31,17 @@ const NotFound = () => {
           </Button>
         </div>
       </div>
+=======
+import React from 'react';
+
+const NotFound = () => {
+  return (
+    <div className="container mx-auto py-8">
+      <h1 className="text-4xl font-bold text-center mb-8">404 - Page Not Found</h1>
+      <p className="text-lg text-center text-muted-foreground">
+        The page you're looking for doesn't exist.
+      </p>
+>>>>>>> 3c2fbf34177ea51725a1f011d5616a8278f36b8a
     </div>
   );
 };

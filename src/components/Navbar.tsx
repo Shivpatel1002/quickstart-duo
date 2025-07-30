@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -167,6 +168,33 @@ export const Navbar = () => {
           </div>
         </div>
       )}
+=======
+
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+export const Navbar = () => {
+  return (
+    <nav className="bg-background border-b">
+      <div className="container mx-auto px-4 py-3">
+        <div className="flex items-center justify-between">
+          <Link to="/" className="text-xl font-bold">
+            LawMate
+          </Link>
+          <div className="flex items-center space-x-4">
+            <Link to="/about" className="text-muted-foreground hover:text-foreground">
+              About
+            </Link>
+            <Link to="/contact" className="text-muted-foreground hover:text-foreground">
+              Contact
+            </Link>
+            <Link to="/login" className="text-muted-foreground hover:text-foreground">
+              Login
+            </Link>
+          </div>
+        </div>
+      </div>
+>>>>>>> 3c2fbf34177ea51725a1f011d5616a8278f36b8a
     </nav>
   );
 };

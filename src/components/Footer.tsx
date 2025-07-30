@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
 export const Footer = () => {
   return <footer className="bg-navy text-white">
@@ -56,3 +57,19 @@ export const Footer = () => {
       </div>
     </footer>;
 };
+=======
+
+import React from 'react';
+
+export const Footer = () => {
+  return (
+    <footer className="bg-background border-t mt-auto">
+      <div className="container mx-auto px-4 py-6">
+        <div className="text-center text-muted-foreground">
+          <p>&copy; 2024 LawMate. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+>>>>>>> 3c2fbf34177ea51725a1f011d5616a8278f36b8a

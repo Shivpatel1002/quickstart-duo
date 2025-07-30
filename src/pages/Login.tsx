@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -154,6 +155,17 @@ const Login = () => {
           </CardContent>
         </Card>
       </div>
+=======
+import React from 'react';
+
+const Login = () => {
+  return (
+    <div className="container mx-auto py-8">
+      <h1 className="text-4xl font-bold text-center mb-8">Login</h1>
+      <p className="text-lg text-center text-muted-foreground">
+        Coming soon...
+      </p>
+>>>>>>> 3c2fbf34177ea51725a1f011d5616a8278f36b8a
     </div>
   );
 };

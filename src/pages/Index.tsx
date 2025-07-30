@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -375,6 +376,18 @@ const Index = () => {
           </div>
         </div>
       </section>
+=======
+
+import React from 'react';
+
+const Index = () => {
+  return (
+    <div className="container mx-auto py-8">
+      <h1 className="text-4xl font-bold text-center mb-8">Welcome to LawMate</h1>
+      <p className="text-lg text-center text-muted-foreground">
+        Your legal companion platform
+      </p>
+>>>>>>> 3c2fbf34177ea51725a1f011d5616a8278f36b8a
     </div>
   );
 };

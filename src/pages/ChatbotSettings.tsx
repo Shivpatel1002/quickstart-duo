@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -230,6 +231,17 @@ const ChatbotSettings = () => {
           </Button>
         </div>
       </div>
+=======
+import React from 'react';
+
+const ChatbotSettings = () => {
+  return (
+    <div className="container mx-auto py-8">
+      <h1 className="text-4xl font-bold text-center mb-8">Chatbot Settings</h1>
+      <p className="text-lg text-center text-muted-foreground">
+        Coming soon...
+      </p>
+>>>>>>> 3c2fbf34177ea51725a1f011d5616a8278f36b8a
     </div>
   );
 };
