@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> 3c2fbf34177ea51725a1f011d5616a8278f36b8a
 import React from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -64,7 +61,6 @@ const App = () => (
           <ScrollToTop />
           <div className="min-h-screen flex flex-col bg-background">
             <Routes>
-              {/* Public Routes with Navbar */}
               <Route path="/" element={
                 <>
                   <Navbar />
@@ -83,11 +79,8 @@ const App = () => (
                   <Footer />
                 </>
               } />
-              {/* Chatbot Route without Footer */}
               <Route path="/chatbot" element={<Chatbot />} />
-              {/* Chatbot Settings Route without Navbar/Footer */}
               <Route path="/chatbot-settings" element={<ChatbotSettings />} />
-              {/* Legal AI Settings Route without Navbar/Footer */}
               <Route path="/legal-ai-settings" element={<LegalAISettings />} />
               <Route path="/lawsimplify" element={
                 <>
@@ -116,42 +109,6 @@ const App = () => (
                   <Footer />
                 </>
               } />
-              <Route path="/lawyer/:id" element={
-                <>
-                  <Navbar />
-                  <main className="flex-1">
-                    <PublicLawyerProfile />
-                  </main>
-                  <Footer />
-                </>
-              } />
-              <Route path="/booking/:lawyerId" element={
-                <>
-                  <Navbar />
-                  <main className="flex-1">
-                    <AppointmentBooking />
-                  </main>
-                  <Footer />
-                </>
-              } />
-              <Route path="/chat/:lawyerId" element={
-                <>
-                  <Navbar />
-                  <main className="flex-1">
-                    <ChatWithLawyer />
-                  </main>
-                  <Footer />
-                </>
-              } />
-              <Route path="/video-call/:sessionId" element={
-                <>
-                  <Navbar />
-                  <main className="flex-1">
-                    <VideoCall />
-                  </main>
-                  <Footer />
-                </>
-              } />
               <Route path="/contact" element={
                 <>
                   <Navbar />
@@ -169,39 +126,7 @@ const App = () => (
                   </main>
                 </>
               } />
-              <Route path="/signup" element={
-                <>
-                  <Navbar />
-                  <main className="flex-1">
-                    <Signup />
-                  </main>
-                </>
-              } />
-              <Route path="/otp-verification" element={
-                <>
-                  <main className="flex-1">
-                    <OtpVerification />
-                  </main>
-                </>
-              } />
-              
-              {/* Lawyer Panel Routes (No Navbar/Footer) */}
-              <Route path="/lawyer-dashboard" element={<LawyerDashboard />} />
-              <Route path="/lawyer-appointments" element={<LawyerAppointments />} />
-              <Route path="/lawyer-all-appointments" element={<LawyerAllAppointments />} />
-              <Route path="/lawyer-clients" element={<LawyerClients />} />
-              <Route path="/lawyer-messages" element={<LawyerMessages />} />
-              <Route path="/lawyer-video-calls" element={<LawyerVideoCalls />} />
-              <Route path="/lawyer-documents" element={<LawyerDocuments />} />
-              <Route path="/lawyer-profile" element={<LawyerProfile />} />
-              <Route path="/lawyer-payments" element={<LawyerPayments />} />
-              <Route path="/lawyer-reviews" element={<LawyerReviews />} />
-              <Route path="/lawyer-settings" element={<LawyerSettings />} />
-              
-              {/* Admin Panel Route (No Navbar/Footer) */}
               <Route path="/admin-dashboard" element={<AdminDashboard />} />
-              
-              {/* 404 Route */}
               <Route path="*" element={
                 <>
                   <Navbar />

@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> 3c2fbf34177ea51725a1f011d5616a8278f36b8a
 import { useToast } from "@/hooks/use-toast"
 import {
   Toast,
